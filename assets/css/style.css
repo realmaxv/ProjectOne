@@ -1,0 +1,441 @@
+@font-face {
+    font-family: "Alegreya_SC";
+    src: url(../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: "NixieOne";
+    src: url(../fonts/Nixie_One/NixieOne-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+    /* border: 1px solid red; */
+}
+body{
+    overscroll-behavior: none;
+}
+img{
+    max-width: 100%;
+}
+:root{
+
+    --primary_Color: #FFFFFF;
+    --scondary_Color: #3A4F52;
+    --p_Color: #6A6A6A;
+    --a_Color: #4DA7CA;
+    --footer_Color: #2B3E51;
+
+
+
+}
+
+html{
+    font-size: clamp(1.1rem,60%,3vw);
+}
+
+header{
+
+    min-height: 90vh;
+    max-height: 810px;
+   
+    position: relative;
+    background-image: url(../image/head_back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items:center ;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+header .header_top{
+    position: absolute;
+    top:0;
+    width: 100%;
+ 
+    height: 100px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 	1.563vw;
+
+ 
+
+}
+
+.header_top h2{
+    font-family: "Alegreya_SC", "sans-serif";
+    color: var(--primary_Color);
+    font-size: 36px;
+
+}
+
+
+.header_top h2:hover{
+padding-bottom: 1px;
+text-decoration: underline;
+    
+}
+
+
+.menu_icon{
+    
+    stroke: black;
+   
+  
+}
+
+
+.header_middle{
+   
+ 
+  text-align: center;
+}
+
+.header_middle p:nth-of-type(1){
+    color: var(--primary_Color);
+    font-family: "NixieOne";
+    font-size: 56px;
+    
+}
+
+.header_middle p:nth-of-type(2){
+color: rgba(255, 255, 255, 0.50);
+    font-family: "Alegreya_SC";
+    font-size: 22px;
+    
+}
+
+
+
+
+
+.wrapper_sec_one{
+    display: flex;
+    background-color: yellow;
+    flex-direction: column;
+    align-items: center;
+   
+
+    padding: 6.5vh 9vw;
+}
+.section_Head{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+  /* border: 1px solid red; */
+  
+
+}
+
+.section_Head_Text{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    align-items: start;
+    justify-content: start;
+   
+
+}
+
+.section_Head_Text p:nth-of-type(1){
+
+    font-family: "Alegreya_SC";
+    font-size: 2.6rem;
+    color: var(--scondary_Color);
+    padding-bottom: 15px;
+
+}
+.section_Head_Text p:nth-of-type(2){
+
+    font-family: "Helvetica Neue","sans-serif";
+    font-size: 1.1rem;
+    color: var(--p_Color);
+
+
+}
+
+.s_H_button{
+    margin-top: -18px;
+    border: 1px solid #3A4F52;
+   
+}
+
+.s_H_button p{
+    color: var(--scondary_Color);
+    font-size: 18px;
+    padding: 10px 15px;
+  
+
+}
+
+.portfolio{
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+
+}
+
+
+.sec_Service{
+    background-image: url(../image/back\ sec2.jpg);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14vh 11vw;
+}
+
+.wrapper_sec_two{
+
+display: grid;
+grid-template-rows: repeat(2,1fr);
+background: rgba(0, 0, 0, 0.20);
+padding: 0 5vw;
+
+
+
+
+
+}
+
+.sec_two_text{
+    
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+
+}
+
+.sec_two_text h2{
+    font-family: "Alegreya_SC";
+    color: #fff;
+    font-size: 36px;
+}
+.sec_two_text p{
+    font-family: "Helvetica Neue";
+    color: #fff;
+    font-size: 14px;
+}
+
+.elements{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+background-color: gray;
+  
+
+    text-align: center;
+    margin: 2vw;
+}
+
+.elements div{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+
+
+   
+  
+} 
+
+.white{
+    color: var(--primary_Color);
+    margin: 0 2vw;
+}
+
+.elements h3{
+    font-family: "Alegreya_SC";
+
+    font-size: 30px;
+}
+.elements p{
+    font-family: "Helvetica Neue";
+
+ 
+    font-size: 14px;
+}
+
+
+.two{
+    
+ 
+  display: flex;
+text-align: left;
+ align-items: flex-start;
+}
+
+.two div{
+  
+ display: flex;
+ align-items: start;
+ justify-content: left;
+ gap: 2rem;
+}
+
+.sec_ipsum{
+background-image: url(../image/parallax.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 14vh 11vw;
+}
+
+.wrapper_ipsum{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 6rem;
+padding: 2vw;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.ips_text{
+    color: #fff;
+    font-size: 3.6rem;
+
+
+}
+
+.btn{
+    border: 1px solid white;
+  
+}
+
+.btn p{
+    color: #fff;
+}
+
+
+
+.form form{
+    display: flex;
+width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background: transparent;
+  color: white;
+}
+
+.form form input{
+    width: 80%;
+    min-height: 2.2vw;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.form form textarea{
+    width: 80%;
+    background: transparent;
+    border: 1px solid #fff;
+    
+}
+
+.form form textarea::placeholder, .form form input::placeholder{
+
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+    
+}
+
+
+.sec_p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    width: 100%;
+    gap: 20px;
+}
+
+.sec_p h2{
+    font-size: 36px;
+    font-family: "Alegreya_SC";
+    color: #3A4F52;
+}
+
+.sec_p p{
+    font-family: "Helvetica";
+    font-size: 15px;
+    color: #6A6A6A;
+}
+
+
+
+.Testimonials div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.20);
+    padding: 2vh 5vw;
+}
+
+.btn_1{
+
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid wheat;
+}
+
+.btn_1 p{
+    color: white;
+}
+
+footer{
+    height: 100px;
+    background-color: var(--footer_Color);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+footer p{
+    color: #F1F0F0;
+    font-size: 14px;
+    padding: 0 9vw;
+}
+
