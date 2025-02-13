@@ -386,7 +386,12 @@ padding: 2vw;
     
 }
 
+.secnew{
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .sec_p{
     text-align: center;
     display: flex;
@@ -399,14 +404,14 @@ padding: 2vw;
 }
 
 .sec_p h2{
-    font-size: 36px;
+    font-size: 3rem;
     font-family: "Alegreya_SC";
     color: #3A4F52;
 }
 
 .sec_p p{
     font-family: "Helvetica";
-    font-size: 15px;
+    font-size: 1rem;
     color: #6A6A6A;
 }
 
@@ -459,3 +464,6 @@ footer p{
     padding: 0 9vw;
 }
 
+@media screen and max-width(768){
+    
+}
