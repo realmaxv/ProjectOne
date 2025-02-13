@@ -36,8 +36,12 @@ img{
 }
 
 html{
-    font-size: clamp(1.1rem,60%,3vw);
+    font-size: clamp(0.7rem,60%,3vw);
 }
+
+
+
+/* HEAD */
 
 header{
 
@@ -75,7 +79,7 @@ header .header_top{
 .header_top h2{
     font-family: "Alegreya_SC", "sans-serif";
     color: var(--primary_Color);
-    font-size: 36px;
+    font-size: 2.6rem;
 
 }
 
@@ -104,45 +108,42 @@ text-decoration: underline;
 .header_middle p:nth-of-type(1){
     color: var(--primary_Color);
     font-family: "NixieOne";
-    font-size: 56px;
+    font-size: 5rem;
     
 }
 
 .header_middle p:nth-of-type(2){
 color: rgba(255, 255, 255, 0.50);
     font-family: "Alegreya_SC";
-    font-size: 22px;
+    font-size: 1.7rem;
     
 }
 
 
+/* MAIN */
+section{
 
-
-
-.wrapper_sec_one{
-    display: flex;
-    background-color: yellow;
-    flex-direction: column;
-    align-items: center;
-   
-
-    padding: 6.5vh 9vw;
+display: flex;
+ padding: 6.5vh 9vw;
 }
+
 .section_Head{
     
     display: flex;
-    justify-content: space-between;
-    align-items:center;
 
-  /* border: 1px solid red; */
+  justify-content: space-between;
+  align-items: center;
+ 
+
+
   
-
+margin-bottom: 60px;
 }
 
 .section_Head_Text{
     display: flex;
     flex-direction: column;
-    background-color: green;
+  
     align-items: start;
     justify-content: start;
    
@@ -152,7 +153,7 @@ color: rgba(255, 255, 255, 0.50);
 .section_Head_Text p:nth-of-type(1){
 
     font-family: "Alegreya_SC";
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     color: var(--scondary_Color);
     padding-bottom: 15px;
 
@@ -160,7 +161,7 @@ color: rgba(255, 255, 255, 0.50);
 .section_Head_Text p:nth-of-type(2){
 
     font-family: "Helvetica Neue","sans-serif";
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     color: var(--p_Color);
 
 
@@ -174,14 +175,14 @@ color: rgba(255, 255, 255, 0.50);
 
 .s_H_button p{
     color: var(--scondary_Color);
-    font-size: 18px;
+    font-size: 1rem;
     padding: 10px 15px;
   
 
 }
 
 .portfolio{
-  
+
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
@@ -198,17 +199,18 @@ color: rgba(255, 255, 255, 0.50);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14vh 11vw;
+ 
 }
 
 .wrapper_sec_two{
 
-display: grid;
-grid-template-rows: repeat(2,1fr);
+display: flex;
+flex-direction: column;
+gap: 4rem;
 background: rgba(0, 0, 0, 0.20);
-padding: 0 5vw;
 
 
+padding: 20px 0;
 
 
 
@@ -220,39 +222,41 @@ padding: 0 5vw;
    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
-    text-align: center;
+    gap: 2rem;
+   
 
 }
 
 .sec_two_text h2{
     font-family: "Alegreya_SC";
     color: #fff;
-    font-size: 36px;
+    font-size: 2rem;
 }
 .sec_two_text p{
     font-family: "Helvetica Neue";
     color: #fff;
-    font-size: 14px;
+    font-size: 0.7rem;
 }
 
 .elements{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-background-color: gray;
+
+
   
 
-    text-align: center;
-    margin: 2vw;
+    
+  
 }
 
 .elements div{
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 0.7rem;
 
 
    
@@ -263,34 +267,46 @@ background-color: gray;
     color: var(--primary_Color);
     margin: 0 2vw;
 }
-
-.elements h3{
+.white p{
+    max-width: 60%;
+    text-align: center;
+}
+.elements h3, .elements_two h3{
     font-family: "Alegreya_SC";
 
-    font-size: 30px;
+    font-size: 1.6rem;
 }
-.elements p{
+.elements p, .elements_two p{
     font-family: "Helvetica Neue";
 
  
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 
-.two{
+.elements_two{
     
- 
+
   display: flex;
-text-align: left;
- align-items: flex-start;
+  justify-content: center;
+  gap: 2vw;
+  padding-bottom: 1rem;
+
+}
+.elements_two_Text{
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
 }
 
-.two div{
-  
- display: flex;
- align-items: start;
- justify-content: left;
- gap: 2rem;
+
+.readme{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    color: #4DA7CA;
+    text-decoration: none;
 }
 
 .sec_ipsum{
@@ -313,11 +329,13 @@ justify-content: center;
 gap: 6rem;
 padding: 2vw;
     background: rgba(0, 0, 0, 0.20);
+
 }
 
 .ips_text{
     color: #fff;
-    font-size: 3.6rem;
+    font-size: 1.8rem;
+    max-width: 80%;
 
 
 }
@@ -331,38 +349,40 @@ padding: 2vw;
     color: #fff;
 }
 
+.Testimonials p{
+    max-width: 60%;
 
+}
 
 .form form{
     display: flex;
-width: 100%;
-    justify-content: center;
-    align-items: center;
+
+ 
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     background: transparent;
   color: white;
 }
 
 .form form input{
-    width: 80%;
-    min-height: 2.2vw;
+ 
+  text-align: center;
     background: transparent;
-    border: 1px solid #fff;
+    border: 0.1px solid #fff;
 }
 
 .form form textarea{
-    width: 80%;
+  text-align: center;
     background: transparent;
-    border: 1px solid #fff;
+    border: 0.1px solid #fff;
     
 }
 
 .form form textarea::placeholder, .form form input::placeholder{
 
   color: white;
-  padding: 5px;
-  font-size: 10px;
+  text-align: start;
+  font-size: 0.7rem;
     
 }
 
@@ -374,8 +394,8 @@ width: 100%;
     justify-content: center;
     flex-direction: column;
    
-    width: 100%;
-    gap: 20px;
+   
+    gap: 2rem;
 }
 
 .sec_p h2{
@@ -426,7 +446,7 @@ width: 100%;
 }
 
 footer{
-    height: 100px;
+   min-height: 10vh;
     background-color: var(--footer_Color);
     display: flex;
     justify-content: start;
@@ -435,7 +455,7 @@ footer{
 
 footer p{
     color: #F1F0F0;
-    font-size: 14px;
+    font-size: 0.8rem;
     padding: 0 9vw;
 }
 
