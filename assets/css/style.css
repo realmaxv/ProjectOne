@@ -46,7 +46,7 @@ html{
 header{
 
     min-height: 90vh;
-    max-height: 810px;
+  
    
     position: relative;
     background-image: url(../image/head_back.jpg);
@@ -124,9 +124,21 @@ color: rgba(255, 255, 255, 0.50);
 section{
 
 display: flex;
+justify-content: center;
+align-items: center;
  padding: 6.5vh 9vw;
 }
 
+.sec_one{
+    min-width: 100%
+}
+
+.wrapper_sec_one{
+    display: flex;
+    flex-direction: column;
+    
+
+}
 .section_Head{
     
     display: flex;
@@ -168,15 +180,17 @@ margin-bottom: 60px;
 }
 
 .s_H_button{
-    margin-top: -18px;
+    display: flex;
+    gap: 5rem;
     border: 1px solid #3A4F52;
    
 }
 
 .s_H_button p{
+    margin: 1rem;
     color: var(--scondary_Color);
     font-size: 1rem;
-    padding: 10px 15px;
+    
   
 
 }
@@ -464,6 +478,54 @@ footer p{
     padding: 0 9vw;
 }
 
-@media screen and max-width(768){
-    
+@media screen and (max-width: 768px){
+    .elements{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 1.6rem;
+    }
+    .white p, .wrapper_sec_one div p{
+
+        max-width: 90%;
+
+    }
+
+    .sec_Service{
+        padding: 6.5vh 0;
+    }
+    .new{
+        padding: 6.5vh 0;
+    }
+
+
+    .section_Head_Text{
+        
+      
+        min-width: 70% ;
+
+    }
+}
+
+@media screen and (max-width: 375px){
+    .elements, .portfolio, .elements_two{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 1.6rem;
+    }
+    .white p, .wrapper_sec_one div p{
+   
+        max-width: 90%;
+
+    }
+
+
+
+    .section_Head_Text{
+        
+      
+        min-width: 70% ;
+
+    }
+
 }
